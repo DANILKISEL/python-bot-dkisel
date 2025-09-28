@@ -1,9 +1,8 @@
 import telebot
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 
-tokenFile = open("token.txt", "r")
-token = tokenFile.read()
-bot = telebot.TeleBot(token)
+from botStarter import Bot
+bot = Bot("bot").get_bot()
 
 
 # Welcome new members

@@ -1,7 +1,5 @@
-import telebot
-tokenFile = open("token.txt", "r")
-token = tokenFile.read()
-bot = telebot.TeleBot(token)
+from botStarter import Bot
+bot = Bot("bot").get_bot()
 
 # Define states for the conversation
 user_data = {}
